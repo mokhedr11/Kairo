@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kairo | Digital Studio</title>
+  <meta name="description" content="Kairo is a small digital studio that designs and builds fast, beautiful, responsive websites for growing brands.">
+  <meta name="theme-color" content="#f6f2ea">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="preloader" aria-hidden="true">
+    <div class="pl-inner">
+      <span class="pl-logo">Kairo<i>.</i></span>
+      <div class="pl-bar"><span></span></div>
+    </div>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav container" aria-label="Main">
+      <a href="#home" class="logo">Kairo<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" data-link>Home</a></li>
+        <li><a href="#about" data-link>About</a></li>
+        <li><a href="#services" data-link>Services</a></li>
+        <li><a href="#process" data-link>Process</a></li>
+        <li><a href="#projects" data-link>Work</a></li>
+        <li><a href="#faq" data-link>FAQ</a></li>
+        <li class="nav-cta-mobile"><a href="#contact" class="btn btn-accent">Start a project</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-dark nav-cta" data-magnetic>Start a project</a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="blob b1"></div><div class="blob b2"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="dot"></span> Digital studio · Egypt</p>
+          <h1 class="split">We design websites <em>people remember.</em></h1>
+          <p class="lead reveal">Kairo turns ideas into fast, beautiful and fully responsive websites for brands that want to grow online.</p>
+          <div class="hero-cta reveal">
+            <a href="#contact" class="btn btn-accent" data-magnetic>Start a project
+              <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            <a href="#projects" class="btn btn-ghost" data-magnetic>See our work</a>
+          </div>
+          <ul class="hero-stats reveal">
+            <li><b><span data-count="24" data-suffix="h">0</span></b><span>reply time</span></li>
+            <li><b><span data-count="100" data-suffix="%">0</span></b><span>responsive</span></li>
+            <li><b><span data-count="3">0</span></b><span>step process</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="device" data-tilt>
+            <div class="device-bar"><i></i><i></i><i></i></div>
+            <div class="device-body">
+              <div class="line w60"></div><div class="line w40"></div>
+              <div class="mini-cards"><span></span><span></span><span></span></div>
+              <div class="chart"><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:50%"></i><i style="--h:85%"></i><i style="--h:60%"></i><i style="--h:95%"></i></div>
+            </div>
+          </div>
+          <div class="chip c1" style="--k:36px"><b>✓</b> Launch ready</div>
+          <div class="chip c2" style="--k:-28px"><b>+128%</b> more visits</div>
+          <div class="chip c3" style="--k:20px"><i class="swatch"></i><i class="swatch s2"></i><i class="swatch s3"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-wrap" aria-hidden="true"><div class="marquee">
+      <div class="marquee-track">
+        <span>Websites</span><i>✦</i><span>Branding</span><i>✦</i><span>UI / UX</span><i>✦</i><span>Web apps</span><i>✦</i><span>SEO</span><i>✦</i>
+        <span>Websites</span><i>✦</i><span>Branding</span><i>✦</i><span>UI / UX</span><i>✦</i><span>Web apps</span><i>✦</i><span>SEO</span><i>✦</i>
+      </div>
+    </div></div>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container two">
+        <div class="orbit reveal" aria-hidden="true">
+          <div class="ring r1"><i></i></div><div class="ring r2"><i></i></div><div class="ring r3"><i></i></div>
+          <div class="core">K</div>
+        </div>
+        <div class="about-text" data-stagger>
+          <p class="eyebrow reveal">About Kairo</p>
+          <h2 class="reveal">A small studio with a big attention to detail.</h2>
+          <p class="reveal">We believe a website should feel effortless: clear to read, quick to load and a pleasure to use on any screen.</p>
+          <p class="reveal">From the first sketch to launch day, we work closely with you so the result looks like your brand, not like a template.</p>
+          <ul class="ticks reveal">
+            <li>Custom design, no templates</li>
+            <li>Built with clean, modern code</li>
+            <li>Optimized for speed and SEO</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="container">
+        <header class="head center" data-stagger>
+          <p class="eyebrow reveal">What we do</p>
+          <h2 class="reveal">Everything your brand needs online</h2>
+          <p class="reveal">Six focused services, one team, one clear process.</p>
+        </header>
+        <div class="grid3" data-stagger>
+          <article class="card spot reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></div><h3>Web development</h3><p>Fast, responsive websites built with clean code that works on every device.</p></article>
+          <article class="card spot reveal"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".6"/><circle cx="17.5" cy="10.5" r=".6"/><circle cx="8.5" cy="7.5" r=".6"/><circle cx="6.5" cy="12.5" r=".6"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.5-.7 1.5-1.5 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.8.7-1.5 1.5-1.5H16c3.3 0 6-2.7 6-6 0-4.4-4.5-8-10-8z"/></svg></div><h3>UI / UX design</h3><p>Clear, modern interfaces that guide visitors and make your product easy to use.</p></article>
+          <article class="card spot reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></div><h3>Branding</h3><p>Logo, colors and type that give your business a look people recognize.</p></article>
+          <article class="card spot reveal"><div class="ico"><svg viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg></div><h3>Web apps</h3><p>Dashboards, booking tools and custom apps that make your work easier.</p></article>
+          <article class="card spot reveal"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><h3>SEO</h3><p>Technical and content foundations that help the right people find you.</p></article>
+          <article class="card spot reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg></div><h3>Growth strategy</h3><p>A clear plan to turn visitors into customers and keep them coming back.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" id="process">
+      <div class="container">
+        <header class="head" data-stagger>
+          <p class="eyebrow reveal">How we work</p>
+          <h2 class="reveal">Three simple steps from idea to launch</h2>
+        </header>
+        <ol class="steps" data-stagger>
+          <li class="step reveal"><span class="num">01</span><h3>Discover</h3><p>We learn about your goals, audience and what makes you different.</p></li>
+          <li class="step reveal"><span class="num">02</span><h3>Design &amp; build</h3><p>We design the look, then build it with clean, fast code. You review at every stage.</p></li>
+          <li class="step reveal"><span class="num">03</span><h3>Launch &amp; grow</h3><p>We test everything, launch your site and stay close to help it grow.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <header class="head" data-stagger>
+          <p class="eyebrow reveal">Selected work</p>
+          <h2 class="reveal">Concepts we love to build</h2>
+        </header>
+        <div class="grid3" data-stagger>
+          <a href="#contact" class="project reveal" data-tilt>
+            <div class="shot s1"><i></i><i></i><i></i></div>
+            <div class="p-info"><div><span>Website</span><h3>Nomad Travel</h3></div><svg viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></div>
+          </a>
+          <a href="#contact" class="project reveal" data-tilt>
+            <div class="shot s2"><i></i><i></i><i></i></div>
+            <div class="p-info"><div><span>App design</span><h3>Fitra Fitness</h3></div><svg viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></div>
+          </a>
+          <a href="#contact" class="project reveal" data-tilt>
+            <div class="shot s3"><i></i><i></i><i></i></div>
+            <div class="p-info"><div><span>E-commerce</span><h3>Daleel Market</h3></div><svg viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container narrow">
+        <header class="head center" data-stagger>
+          <p class="eyebrow reveal">FAQ</p>
+          <h2 class="reveal">Good questions</h2>
+        </header>
+        <div class="qa-list" data-stagger>
+          <div class="qa reveal open"><button aria-expanded="true"><span>How long does a website take?</span><i></i></button><div class="qa-a"><div><p>Most small business sites take two to four weeks from kickoff to launch, depending on the number of pages and content.</p></div></div></div>
+          <div class="qa reveal"><button aria-expanded="false"><span>Will my site work on mobile?</span><i></i></button><div class="qa-a"><div><p>Always. Every page is designed and tested on phones, tablets and desktops.</p></div></div></div>
+          <div class="qa reveal"><button aria-expanded="false"><span>Can you redesign my existing website?</span><i></i></button><div class="qa-a"><div><p>Yes. We can refresh the design, improve speed and keep what already works for you.</p></div></div></div>
+          <div class="qa reveal"><button aria-expanded="false"><span>Do you offer support after launch?</span><i></i></button><div class="qa-a"><div><p>We stay available after launch for fixes, updates and new ideas.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="glow"></div>
+      <div class="container two">
+        <div class="contact-text" data-stagger>
+          <p class="eyebrow reveal">Let's work together</p>
+          <h2 class="reveal">Have an idea? Let's build it.</h2>
+          <p class="reveal">Tell us a little about your project and we'll reply within 24 hours.</p>
+        </div>
+        <form class="form reveal" id="form" novalidate>
+          <label>Name<input type="text" name="name" placeholder="Your name" autocomplete="name" required><small></small></label>
+          <label>Email<input type="email" name="email" placeholder="you@example.com" autocomplete="email" required><small></small></label>
+          <label>Project<textarea name="message" rows="4" placeholder="What would you like to build?" required></textarea><small></small></label>
+          <button class="btn btn-accent" type="submit" data-magnetic>Send message
+            <svg viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>
+          <div class="success" role="status" aria-live="polite"><div class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div><h3>Message sent</h3><p>Thank you. We'll get back to you within 24 hours.</p></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container foot">
+      <div><a href="#home" class="logo">Kairo<span>.</span></a><p>Building better digital experiences for modern brands.</p></div>
+      <ul class="foot-links"><li><a href="#">LinkedIn</a></li><li><a href="#">GitHub</a></li><li><a href="#">Instagram</a></li></ul>
+    </div>
+    <div class="container foot-bottom"><p>© <span id="year">2026</span> Kairo Studio. A concept project by Mohamed Ahmed Khedr.</p></div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
