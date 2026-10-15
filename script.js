@@ -139,18 +139,38 @@
     return !msg;
   };
   $$("input,textarea", form).forEach((f) => f.addEventListener("input", () => f.closest("label").classList.contains("err") && check(f)));
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const ok = $$("input,textarea", form).map(check).every(Boolean);
-    if (!ok) return;
-    const btn = $("button[type=submit]", form); btn.disabled = true;
-    try {
-      if (ENDPOINT) {
-        const r = await fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
-        if (!r.ok) throw new Error("failed");
-      } else await new Promise((r) => setTimeout(r, 700));
-      form.classList.add("sent"); form.reset();
-    } catch { alert("Something went wrong. Please try again."); }
+ 
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const ok = $$("input,textarea", form).map(check).every(Boolean);
+  if (!ok) return;
+
+  const btn = $("button[type=submit]", form);
+  btn.disabled = true;
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(
+        Object.fromEntries(new FormData(form))
+      )
+    });
+
+    if (!response.ok) {
+      throw new Error("Message could not be sent");
+    }
+
+    form.classList.add("sent");
+    form.reset();
+  } catch (error) {
+    alert("Message could not be sent. Please try again.");
+  } finally {
     btn.disabled = false;
-  });
+  }
+});
+
 })();
