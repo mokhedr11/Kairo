@@ -28,7 +28,7 @@ module.exports = async (req, res) => {
       },
       body: JSON.stringify({
         from: "Kairo Digital <onboarding@resend.dev>",
-        to: ["YOUR_RESEND_ACCOUNT_EMAIL"],
+        to: ["ma0912732@gmail.com"],
         reply_to: email.trim(),
         subject: `New project inquiry from ${name.trim()}`,
         text: `Name: ${name.trim()}\nEmail: ${email.trim()}\n\nMessage:\n${message.trim()}`
